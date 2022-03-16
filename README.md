@@ -1,8 +1,8 @@
 # Table of content
-- [StudyBuddy](Intelligent degree recommender system)
-- [Dataset Description]()
-- [Implementation Technologies]()
-- [App Structure]()
+- [StudyBuddy](https://github.com/roshan95/Study-Buddy#study-buddy)
+- [Dataset Description](https://github.com/roshan95/Study-Buddy#dataset-description)
+- [Implementation Technologies](https://github.com/roshan95/Study-Buddy#implementation-technologies)
+- [App Structure](https://github.com/roshan95/Study-Buddy#app-structure)
 - [Code Description]()
 - [To deploy the project]()
 - [Contributors]()
