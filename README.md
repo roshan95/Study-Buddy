@@ -1,11 +1,11 @@
 # Table of content
-[StudyBuddy](Intelligent degree recommender system)
-[Dataset Description]()
-[Implementation Technologies]()
-[App Structure]()
-[Code Description]()
-[To deploy the project]()
-[Contributors]()
+- [StudyBuddy](Intelligent degree recommender system)
+- [Dataset Description]()
+- [Implementation Technologies]()
+- [App Structure]()
+- [Code Description]()
+- [To deploy the project]()
+- [Contributors]()
 
 [A Youtube video shows a demo]()
 # Study Buddy
