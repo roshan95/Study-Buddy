@@ -18,14 +18,40 @@ This project was submited as a final project for  [Learning Analitics](https://w
 - There are 2264 study majors
 -The source of dataset is [HERE](https://studycheck.de)
 # Implementation Technologies
+The project is based on following technologies:
+- Front-End
+  - Website
+    - HTML
+    - CSS
+    - Jinja
+
+- Back-End
+  - Web Server
+    - Python
+    - Flask
+
+- Machine Learning Pipeline
+  - Web Scrapping
+    - BeautifulSoup
+  - Machine learning and data analysis
+    - Scikit learn
+  - Data Processing
+    - Pandas
+  - Data Visualisation
+    - matplotlib
+    - mpld3
+    - Altair
+
+![image](/assests/images/description2)
 # App Structure
 # Machine Learning Pipeline
 # Visualization
 # Project Deployment
 # Run Server
+In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
 # Contributors
-- Roshan Asim
-- Hendrik
-- Yasmine Taha
-- Nahid
+- [Hendrik Eckhoff]()
+- [Yasmine Taha Mokhtar]() 
+- [Nahid Hosseininezhad]() 
+- [Roshan Asim]()
 
