@@ -3,9 +3,12 @@
 - [Dataset Description](https://github.com/roshan95/Study-Buddy#dataset-description)
 - [Implementation Technologies](https://github.com/roshan95/Study-Buddy#implementation-technologies)
 - [App Structure](https://github.com/roshan95/Study-Buddy#app-structure)
-- [Code Description]()
-- [To deploy the project]()
-- [Contributors]()
+- [Code Description](https://github.com/roshan95/Study-Buddy#app-structure)
+- [Machine Learning Pipeline](https://github.com/roshan95/Study-Buddy#app-structure)
+- [To deploy the project](https://github.com/roshan95/Study-Buddy#machine-learning-pipeline)
+- [Visualization](https://github.com/roshan95/Study-Buddy#visualization)
+- [Project Deployment](https://github.com/roshan95/Study-Buddy#project-deployment)
+- [Contributors](https://github.com/roshan95/Study-Buddy#contributors)
 
 [A Youtube video shows a demo]()
 # Study Buddy
@@ -32,6 +35,8 @@ The project is based on following technologies:
 
 ![image](/assets/images/description2.png)
 # App Structure
+
+
 # Machine Learning Pipeline
 - Machine Learning Pipeline
   - Web Scrapping
@@ -48,14 +53,31 @@ The project is based on following technologies:
 All Visualisation is built using:
 
 - Datatable is provided to show the list of the recommended programs
-Example: Recommendation function: To recomment the study programs according to the interest of the user.
+Example: Recommendation function: To recomment the study programs according to the interest of the user
+
 ![image](/assets/images/graphs2.png)
 
-- Datatable is provided to show the list of the recommended programs
-Example: Recommendation function: To recomment the study programs according to the interest of the user.
+- Scatterplot graph to show recommended majors by overall rating and similarity
 
 ![image](/assets/images/graphs1.png)
+
 # Project Deployment
+First you need to install below requirements:
+
+- [Download PyCharm(Community Edition)](https://www.jetbrains.com/pycharm/) or your preferred IDE.
+- [Download latest version of Python](https://www.python.org/downloads/)
+After configuring the python inside your IDE you need to install this project from this repository.
+
+Then you need to install below requirements on our system:
+
+- sci-kit learn == 0.22.1
+- Flask == 1.1.1
+- Numpy == 1.17.4
+- Pandas == 0.25.2
+- html5lib == 1.0.1
+- pymongo == 3.8.0
+- dnspython == 1.16.0
+
 # Run Server
 In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
 # Contributors
