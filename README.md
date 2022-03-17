@@ -54,13 +54,13 @@ The app follows the following structure:
     - base.html
     - home.html
     - results.html
-  - web_app.ipnyb
+  - web_app.ipnyb (Web app)
   - bar1.html
   - sc1_plot.html
 - model (folder)
-  - data_preparation.ipnyb 
-  - recommender.ipnyb
-  - results.pkl
+  - data_preparation.ipnyb  (data cleaning and formatting)
+  - recommender.ipnyb  (machine learning models)
+  - results.pkl (Results retrieved)
 - assets (folder)
   - images (static files)
 
@@ -118,7 +118,7 @@ In the end you can simply run the server.py file and then server will run on you
 
 # Contributors
 - [Hendrik Eckhoff](https://github.com/Rechtecki)
-- [Yasmine Taha Mokhtar]() 
+- [Yasmine Taha Mokhtar](https://github.com/yasmineataha) 
 - [Nahid Hosseininezhad]() 
 - [Roshan Asim](https://github.com/roshan95)
 
