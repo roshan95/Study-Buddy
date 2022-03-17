@@ -13,14 +13,17 @@
 [A Youtube video shows a demo]()
 # Study Buddy
 ![image](/assets/images/logo.png)
+
 The tool recommends degrees from different universities across Germany to students in pursuit of a bachelor’s or master’s degree. It takes your interest in account along with your preference of language of instruction, degree type, and rating score. All you need to do is type in a word or two and the tool recommends programs that best matches what you like. You can view details of the programs, including a description. Additionally, you can get more insights about the recommendation through interactive visuals.
 
 This project was submited as a final project for  [Learning Analytics](https://www.uni-due.de/soco/teaching/overview.php) course under [Social Computing department](https://www.uni-due.de/soco/) at [Duisburg-Essen University](https://www.uni-due.de).
+
 # Dataset Description
 - Multivariate dataset
 - It consists of 18 attributes in csv format
 - There are 2264 study majors
 -The source of dataset is [HERE](https://studycheck.de)
+
 # Implementation Technologies
 The project is based on following technologies:
 - Front-End
@@ -36,7 +39,30 @@ The project is based on following technologies:
 
 
 # App Structure
-
+The app follows the following structure:
+- scraping (folder)
+  - scraper.py (To scrap the website for study programs)
+- data (folder)
+  - raw_data.csv
+  - processed_data.csv
+  - secondary_links.csv
+  - stopwords.pkl
+  - tfidf_mat.pkl
+  - vectorizer.pkl
+- web (folder)
+  - templates (folder)
+    - base.html
+    - home.html
+    - results.html
+  - web_app.ipnyb
+  - bar1.html
+  - sc1_plot.html
+- model (folder)
+  - data_preparation.ipnyb 
+  - recommender.ipnyb
+  - results.pkl
+- assets (folder)
+  - images (static files)
 
 # Machine Learning Pipeline
 - Machine Learning Pipeline
@@ -50,6 +76,7 @@ The project is based on following technologies:
     - matplotlib
     - mpld3
     - Altair
+
 # Visualization
 All Visualisation is built using:
 
@@ -71,16 +98,24 @@ After configuring the python inside your IDE you need to install this project fr
 
 Then you need to install below requirements on our system:
 
-- sci-kit learn == 0.22.1
-- Flask == 1.1.1
-- Numpy == 1.17.4
-- Pandas == 0.25.2
-- html5lib == 1.0.1
-- pymongo == 3.8.0
-- dnspython == 1.16.0
+- altair == 4.2.0
+- beautifulsoup == 4.9.0
+- datapane == 0.13.2
+- flask == 1.1.2
+- matplotlib == 3.3.4
+- mpld3 == 0.5.7
+- numpy == 1.20.1
+- pandas == 1.2.4
+- sklearn == 0.24.1
+- werkzeug == 1.0.1
+- nltk == 3.6.1
+- scipy == 1.6.2
+- texthero == 1.1.0
+- selenium == 4.1.0
 
 # Run Server
 In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
+
 # Contributors
 - [Hendrik Eckhoff](https://github.com/Rechtecki)
 - [Yasmine Taha Mokhtar]() 
