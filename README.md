@@ -39,7 +39,7 @@ The project is based on following technologies:
 
 # Machine Learning Pipeline
 - Machine Learning Pipeline
-  - Web Scrapping
+  - Web Scraping
     - BeautifulSoup
   - Machine learning and data analysis
     - Scikit learn
