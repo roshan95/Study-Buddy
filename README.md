@@ -42,10 +42,20 @@ The project is based on following technologies:
     - mpld3
     - Altair
 
-![image](/assests/images/description2)
+![image](/assests/images/description2.png)
 # App Structure
 # Machine Learning Pipeline
 # Visualization
+All Visualisation is built using:
+
+- Datatable is provided to show the list of the recommended programs
+Example: Recommendation function: To recomment the study programs according to the interest of the user.
+![image](/assests/images/graph1.png)
+
+- Datatable is provided to show the list of the recommended programs
+Example: Recommendation function: To recomment the study programs according to the interest of the user.
+
+![image](/assests/images/graph2.png)
 # Project Deployment
 # Run Server
 In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
