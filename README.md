@@ -80,14 +80,22 @@ The app follows the following structure:
 # Visualization
 All Visualisation is built using:
 
-- Datatable is provided to show the list of the recommended programs
-Example: Recommendation function: To recomment the study programs according to the interest of the user
+**Interactive Table**
+- Shows the top recommended majors (starting with the best match) and their attributes as well as the cosine similarity value
+![image](/assets/images/Table.jpg)
 
-![image](/assets/images/graphs2.png)
+Further Visualizations:
 
-- Scatterplot graph to show recommended majors by overall rating and similarity
+**Scatter Plot**
+- Shows recommended majors by overall rating and similarity
 
-![image](/assets/images/graphs1.png)
+![image](/assets/images/Scatterplot.jpg)
+
+
+**Horizontal Bar Chart**
+- shows top recommended programs in an ordered manner and the corresponding cosine similarity value
+- using color as a legend to distinguish between subcategories that the programs belong to
+![image](/assets/images/Barchart.jpg)
 
 # Project Deployment
 First you need to install below requirements:
