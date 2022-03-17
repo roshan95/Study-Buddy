@@ -27,7 +27,7 @@ column_names = ["is_list", "major_name", "major_description", "studycheck_link",
 new_scrape = ["NA"] * 17
 # TODO Only write columns on file creation but don't overwrite file on new code run?
 # Create new data file with column headers
-with open("../data/data.csv", "a", encoding="utf-8") as output:
+with open("../data/raw_data.csv", "a", encoding="utf-8") as output:
     writer = csv.writer(output, delimiter=',', lineterminator='\n')
     writer.writerow(column_names)
     writer.writerow(new_scrape)
@@ -325,7 +325,7 @@ for secondary_link in secondary_links:
         time.sleep(random.randint(1, 2))
 
         # Writes all scraped variables to data file
-        with open('../data/data.csv', 'a', encoding="utf-8") as output:
+        with open('../data/raw_data.csv', 'a', encoding="utf-8") as output:
             writer = csv.writer(output, delimiter=',', lineterminator='\n')
             writer.writerows(
                 zip(is_list, major_names, major_descriptions, studycheck_links, university_links, categories,
