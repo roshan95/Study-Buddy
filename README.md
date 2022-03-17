@@ -30,6 +30,9 @@ The project is based on following technologies:
     - Python
     - Flask
 
+![image](/assets/images/description2.png)
+# App Structure
+# Machine Learning Pipeline
 - Machine Learning Pipeline
   - Web Scrapping
     - BeautifulSoup
@@ -41,27 +44,23 @@ The project is based on following technologies:
     - matplotlib
     - mpld3
     - Altair
-
-![image](/assets/images/description2.png)
-# App Structure
-# Machine Learning Pipeline
 # Visualization
 All Visualisation is built using:
 
 - Datatable is provided to show the list of the recommended programs
 Example: Recommendation function: To recomment the study programs according to the interest of the user.
-![image](/assets/images/graphs1.png)
+![image](/assets/images/graphs2.png)
 
 - Datatable is provided to show the list of the recommended programs
 Example: Recommendation function: To recomment the study programs according to the interest of the user.
 
-![image](/assets/images/graphs2.png)
+![image](/assets/images/graphs1.png)
 # Project Deployment
 # Run Server
 In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
 # Contributors
-- [Hendrik Eckhoff]()
+- [Hendrik Eckhoff](https://github.com/Rechtecki)
 - [Yasmine Taha Mokhtar]() 
 - [Nahid Hosseininezhad]() 
-- [Roshan Asim]()
+- [Roshan Asim](https://github.com/roshan95)
 
