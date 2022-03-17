@@ -97,6 +97,7 @@ Further Visualizations:
 - using color as a legend to distinguish between subcategories that the programs belong to
 ![image](/assets/images/Barchart.jpg)
 
+
 # Project Deployment
 First you need to install below requirements:
 
