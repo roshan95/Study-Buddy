@@ -27,7 +27,7 @@ column_names = ["is_list", "major_name", "major_description", "studycheck_link",
 new_scrape = ["NA"] * 17
 # TODO Only write columns on file creation but don't overwrite file on new code run?
 # Create new data file with column headers
-with open('/data/data.csv', 'a', encoding="utf-8") as output:
+with open("../data/data.csv", "a", encoding="utf-8") as output:
     writer = csv.writer(output, delimiter=',', lineterminator='\n')
     writer.writerow(column_names)
     writer.writerow(new_scrape)
@@ -49,7 +49,7 @@ main_links = ['https://www.studycheck.de/studium/medizin-gesundheitswesen/seite-
 
 # List of links for second level scraping
 secondary_links = []
-with open('/data/secondary_links.csv', newline='') as f:
+with open('../data/secondary_links.csv', newline='') as f:
     for row in csv.reader(f):
         secondary_links.append(row[0])
 # Testing purposes:
@@ -125,7 +125,7 @@ tertiary_links = []
 #         driver.get(link + str(counter) + "?o=2")
 #         soup = BeautifulSoup(driver.page_source, 'lxml')
 #         # Appends scraped links to .csv file
-#         with open('/data/secondary_links.csv', 'a') as output:
+#         with open('../data/secondary_links.csv', 'a') as output:
 #             writer = csv.writer(output, delimiter=',', lineterminator='\n')
 #             for item in new_links:
 #                 writer.writerow([item])
@@ -325,7 +325,7 @@ for secondary_link in secondary_links:
         time.sleep(random.randint(1, 2))
 
         # Writes all scraped variables to data file
-        with open('/data/data.csv', 'a', encoding="utf-8") as output:
+        with open('../data/data.csv', 'a', encoding="utf-8") as output:
             writer = csv.writer(output, delimiter=',', lineterminator='\n')
             writer.writerows(
                 zip(is_list, major_names, major_descriptions, studycheck_links, university_links, categories,
