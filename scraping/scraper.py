@@ -1,9 +1,5 @@
-# import requests ### Not yet needed? ### TODO
-# import pandas as pd ### Not yet needed? ### TODO
 from bs4 import BeautifulSoup  # Needed to fetch and analyze html
-from selenium import webdriver  # Needed to emulate webdriver # TODO
 from selenium.webdriver import Firefox  # Needed to emulate webdriver
-from selenium.webdriver.firefox.service import Service  # TODO
 from selenium.webdriver.firefox.options import Options as FirefoxOptions  # Needed to set webdriver options
 import time  # Needed to use sleep()
 import csv  # Needed to export links to .csv, if desired
@@ -22,15 +18,11 @@ driver.set_page_load_timeout(60)
 column_names = ["is_list", "major_name", "major_description", "studycheck_link", "university_link", "category",
                 "subcategory", "major_category", "university", "location", "degree_type", "degree_label", "language",
                 "duration_of_study", "rating_amount", "rating", "recommendation_rate"]
-# May be used to easily identify resumes in the scraping process
-# TODO more elegant solution
-new_scrape = ["NA"] * 17
-# TODO Only write columns on file creation but don't overwrite file on new code run?
+
 # Create new data file with column headers
 with open("../data/raw_data.csv", "a", encoding="utf-8") as output:
     writer = csv.writer(output, delimiter=',', lineterminator='\n')
     writer.writerow(column_names)
-    writer.writerow(new_scrape)
 
 # Pre-populated list of major categories for first level scraping (from one time study domain scraping below)
 main_links = ['https://www.studycheck.de/studium/medizin-gesundheitswesen/seite-',
@@ -198,7 +190,6 @@ for secondary_link in secondary_links:
         # Extracts latter half of the menu navigation header
         for found in soup.find_all("li", {"class": re.compile("^rfv1-breadcrumbs__item rfv1-js-breadcrumbs-item.*")}):
             if found.find(content="3"):
-                # TODO Try and see what happens if every find function is using this simple form instead
                 categories_string = found.find(itemprop="name").text.strip()
                 print(found.find(itemprop="name").text.strip())
             elif found.find(content="4"):
@@ -228,7 +219,6 @@ for secondary_link in secondary_links:
             # Splits String and appends university to list
             universities.append(university_location_string.rpartition(" (")[0])
             # Splits String and appends location to list
-            #  TODO: How to handle multiple locations, e.g. "25 Standorte & Virtueller Campus"? if "Standorte" then NA / "Multiple"? (relevant for filtering)
             locations.append(university_location_string.rpartition(" (")[-1].strip(")"))
             # Extracts major name + shortened degree (same String)
             name_degree_string = major_detail.findChild("a", {"class": "rfv1-font-style--none"}).text.strip()
@@ -258,7 +248,6 @@ for secondary_link in secondary_links:
             if "?utm_source=" in university_links[-1]:
                 university_links[-1] = university_links[-1].rpartition("?utm_source=")[0]
             # Extracts rating and appends to list
-            # TODO Extract as integer or treat as integer on import
             if soup.find("div", {"class": "rating-value"}):
                 ratings.append(soup.find("div", {"class": "rating-value"}).text.strip())
             else:
