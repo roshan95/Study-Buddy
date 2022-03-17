@@ -18,6 +18,11 @@ The tool recommends degrees from different universities across Germany to studen
 
 This project was submited as a final project for  [Learning Analytics](https://www.uni-due.de/soco/teaching/overview.php) course under [Social Computing department](https://www.uni-due.de/soco/) at [Duisburg-Essen University](https://www.uni-due.de).
 
+# Features
+- Recommends University degrees tailored to your interest
+- Filtering Options
+- Interactive visuals of the results
+
 # Dataset Description
 - Multivariate dataset
 - It consists of 18 attributes in csv format
