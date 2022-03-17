@@ -10,7 +10,7 @@
 - [Project Deployment](https://github.com/roshan95/Study-Buddy#project-deployment)
 - [Contributors](https://github.com/roshan95/Study-Buddy#contributors)
 
-[A Youtube video shows a demo]()
+[A Youtube video shows a demo](https://youtu.be/C1BQCV-eyvs)
 # Study Buddy
 ![image](/assets/images/logo.png)
 The tool recommends degrees from different universities across Germany to students in pursuit of a bachelor’s or master’s degree. It takes your interest in account along with your preference of language of instruction, degree type, and rating score. All you need to do is type in a word or two and the tool recommends programs that best matches what you like. You can view details of the programs, including a description. Additionally, you can get more insights about the recommendation through interactive visuals.
