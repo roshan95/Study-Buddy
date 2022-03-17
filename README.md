@@ -73,11 +73,17 @@ The app follows the following structure:
 - Machine Learning Pipeline
   - Web Scraping
     - BeautifulSoup
+    - Selenium
   - Machine learning and data analysis
+    - HanTa
     - Scikit learn
+    - NLTK
   - Data Processing
     - Pandas
+    - Pickle
+    - TextHero
   - Data Visualisation
+    - DataTables
     - matplotlib
     - mpld3
     - Altair
@@ -86,20 +92,27 @@ The app follows the following structure:
 All Visualisation is built using:
 
 **Interactive Table**
+***DataTables and Jinja packages***
 - Shows the top recommended majors (starting with the best match) and their attributes as well as the cosine similarity value
+- Able to browse, sort and filter the results according to your liking
 ![image](/assets/images/Table.jpg)
 
 Further Visualizations:
 
 **Scatter Plot**
+***mpld3 package***
+
 - Shows recommended majors by overall rating and similarity
+- Hover over entries or pan within the plot
 
 ![image](/assets/images/Scatterplot.jpg)
 
 
 **Horizontal Bar Chart**
+***Altair package***
 - shows top recommended programs in an ordered manner and the corresponding cosine similarity value
-- using color as a legend to distinguish between subcategories that the programs belong to
+- using color hue as a legend to distinguish between subcategories that the programs belong to
+- Filter displayed majors by language they are taught in via a dropdown-menu
 ![image](/assets/images/Barchart.jpg)
 
 
@@ -107,6 +120,7 @@ Further Visualizations:
 First you need to install below requirements:
 
 - [Download PyCharm(Community Edition)](https://www.jetbrains.com/pycharm/) or your preferred IDE.
+- [Download latest version of Anaconda for Jupyter Notebook](https://www.anaconda.com/)
 - [Download latest version of Python](https://www.python.org/downloads/)
 After configuring the python inside your IDE you need to install this project from this repository.
 
@@ -116,6 +130,7 @@ Then you need to install below requirements on our system:
 - beautifulsoup == 4.9.0
 - datapane == 0.13.2
 - flask == 1.1.2
+- HanTa == 1.0.0
 - matplotlib == 3.3.4
 - mpld3 == 0.5.7
 - numpy == 1.20.1
@@ -128,11 +143,11 @@ Then you need to install below requirements on our system:
 - selenium == 4.1.0
 
 # Run Server
-In the end you can simply run the server.py file and then server will run on you localhost. Then just open Browser and access http://localhost:5000/ and enjoy the Web Application.
+In the end you can simply run the web_app.ipynb file and then the server will run on you localhost. Afterwards just open Browser and access http://localhost:5000/ and enjoy the Web Application.
 
 # Contributors
 - [Hendrik Eckhoff](https://github.com/Rechtecki)
 - [Yasmine Taha Mokhtar](https://github.com/yasmineataha) 
-- [Nahid Hosseininezhad]() 
+- [Nahid Hosseininezhad](https://github.com/emrys7272/) 
 - [Roshan Asim](https://github.com/roshan95)
 
