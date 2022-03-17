@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method=post action="{{url_for('rld')}}" style="text-align: center;">
+    <label for="nresultsString">How many suggestions do you want?</label>
+    <input type="text" id="nresultsString" name="nresultsString"/>
+    <input type=submit value='Reload' name='reload_btn'>
+</form>
+    <br>
+    <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Major</th>
+        <th>Calculated Similarity</th>
+        <th>Rating (0-5)</th>
+        <th># of ratings</th>
+        <th>University</th>
+        <th>Location</th>
+        <th>Degree</th>
+        <th>Language</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for index, row in majors.iterrows() %}
+      <tr>
+        <td>{{ row["rank"] }}</td>
+        <td>{{ row["major_name"] }}</td>
+        <td>{{ row["similarity"] }}</td>
+        <td>{{ row["rating"] }}</td>
+        <td>{{ row["rating_amount"] }}</td>
+        <td>{{ row["university"] }}</td>
+        <td>{{ row["location"] }}</td>
+        <td>{{ row["degree_label"] }}</td>
+        <td>{{ row["language"] }}</td>
+        <td>{{ row["university_link"] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function () {
+      $('#data').DataTable({
+        columns: [
+          {searchable: false},
+          null,
+          {searchable: false},
+          {searchable: false},
+          {searchable: false},
+          null,
+          null,
+          {orderable: false},
+          null,
+          {searchable: false, orderable: false}],
+      });
+    });
+</script>
+
+    <center>
+    {{ sc1_plot|safe }}
+    </center>
+ <br>
+    <center>
+    {{ bar1_plot|safe }}
+    </center>
+ </br>
+
+{% endblock %}
+
+
+
+
+

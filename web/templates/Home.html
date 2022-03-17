@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+<head>
+
+<style>
+
+body {
+     background-color: #035956;    
+     }
+    
+h1  {
+    color: Yellow;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    }
+ 
+h2  {
+    color: Black;
+    }
+    
+.Container {
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    height: 250px;
+    width: 20%; 
+    }
+    
+</style>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+ 
+ <div class="header">  
+    <h1> Study Buddy 
+    </h1> 
+ <nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#info" class="w3-button w3-bar-item">Info</a>
+    <a href="#performance" class="w3-button w3-bar-item">Performance</a>
+ </nav>
+ </div>
+ <section> 
+    <img class="myImage" src="https://images.pexels.com/photos/6146978/pexels-photo-6146978.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width:80% ">
+    <div class="Container">
+    <h2 class="u-text u-text-default u-text-2">
+    My Interests are
+    </h2>
+    <div class="u-form u-form-1">
+        <form action="{{url_for('results')}}"
+              method="POST"
+              class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+              style="padding: 15px">
+        <input rows="4"
+              cols="50"
+              id="message-6797"
+              name="interests"
+              class="u-border-1 u-border-grey-30 u-input u-input-rectangle"
+              required="">
+        </input>
+        <input name="results"
+               type= "submit"
+               class="u-btn u-btn-submit u-button-style">
+        </input>
+                              
+    </div>
+                              
+                              
+        </form>
+    </div>
+
+</body>
+
+</html>

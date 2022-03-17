@@ -2,3 +2,4 @@
 *.log
 model/.ipynb_checkpoints/data_preparation-checkpoint.ipynb
 model/.ipynb_checkpoints/recommender-checkpoint.ipynb
+web/.ipynb_checkpoints/web_app-checkpoint.ipynb
