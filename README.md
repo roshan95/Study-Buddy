@@ -127,16 +127,21 @@ After configuring the python inside your IDE you need to install this project fr
 Then you need to install below requirements on our system:
 
 - altair == 4.2.0
-- beautifulsoup == 4.9.0
+- beautifulsoup4
 - datapane == 0.13.2
 - flask == 1.1.2
-- HanTa == 1.0.0
+- gensim==3.8.3
+- itsdangerous==2.0.1
+- Jinja2==3.0.1
+- MarkupSafe==2.0.1
 - matplotlib == 3.3.4
 - mpld3 == 0.5.7
 - numpy == 1.20.1
 - pandas == 1.2.4
-- sklearn == 0.24.1
+- pickle
+- scikit-learn == 0.24.1
 - werkzeug == 1.0.1
+- HanTa
 - nltk == 3.6.1
 - scipy == 1.6.2
 - texthero == 1.1.0
